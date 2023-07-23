@@ -1,0 +1,62 @@
+
+.container {
+    position: relative;
+    top: 8em;
+    width: 45em;
+    height: 115em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5em double white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background:rgb(59, 59, 59);
+}
+
+.content {
+    position: absolute;
+    width: 99%;
+    height: 99.5%;
+    box-sizing: border-box;
+    background: rgb(29, 29, 29);
+    border: double 0.2em transparent;
+    border-radius: 0.5em;
+    background-image: linear-gradient(rgb(26, 26, 26), rgb(26, 26, 26)), linear-gradient(to bottom, orange, gold);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
+
+
+
+.underline {
+    position: absolute;
+    border-top: 1.4em  black;
+    border-bottom: 1.4em black;
+    border-left: 1.4em solid transparent;
+    border-right: 1.4em solid transparent;
+    margin-top: 0em;
+    left: 50%;
+   
+}
+
+.recipe {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5em;
+    font-size: 1.85em;
+    color: green;
+    font-family: monospace;
+    font-weight: normal;
+    opacity: 0;
+}
+
+.text-style {
+    color: #D1BBAB;
+    background-color:  #A64B07;
+    padding: 10px 30px;
+    display: inline-block;
+    text-align: center;
+}
