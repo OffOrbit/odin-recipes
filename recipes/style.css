@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: OCRA A Std, monospace;
+    font-size: 23px;
 }
 .banner{
     width: 100%;
@@ -12,35 +13,76 @@
 }
 
 .navbar {
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 35px 0;
-    display: flex;
+    padding: 50px 0;
+    display: -moz-box;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    width: 120px;
+    width: 450px;
     cursor: pointer;
+    padding-left: 700px;
+    padding-right: 700px;
+    padding-top: 50px;
+
+
 }
 .navbar ul li{
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+    display: inline-flexbox;
+    margin: 0 250px;
     position: relative;
+    padding-top: 140px;
 }
 .navbar ul li a{
-    text-decoration: none;
-    color: white;
+    text-decoration: gray;
+    color: rgba(238, 234, 232, 0.788);
     text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #a05004;
+    text-decoration-thickness: 3px;
+    
+    
 }
+
 .navbar ul li::after{
     content: '';
     height: 3px;
-    width: 100%;
-    background-color: #009688;
+    width: 0;
+    background-color: #a05004;
     position: absolute;
     left: 0;
     bottom: 0;
+    transition: 1.5s;
 }
+.navbar ul li:hover:after{
+    width: 100%;
+
+}
+a.link {
+    color: rgba(218, 130, 86, 0.788);
+    text-transform: lowercase;
+    text-decoration: none;
+
+  }
+  
+  /* Style for the tooltip (hidden by default) */
+  a.link::after {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background-color: #8f6950;
+    color: rgb(27, 27, 26);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    text-transform: none;
+  }
+  
+  /* Show the tooltip on hover */
+  a.link:hover::after {
+    display: block;
+  }
