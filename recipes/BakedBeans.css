@@ -1,62 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.container {
-    position: relative;
-    top: 8em;
-    width: 45em;
-    height: 115em;
+*{
+    margin 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 65px;
+    
+
+}
+
+section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.5em double white;
+}
+
+.one { 
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 1em;
-    background:rgb(59, 59, 59);
+    background-color: #330f06;
+    padding-top: 100px;
+   
+
 }
 
 .content {
-    position: absolute;
-    width: 99%;
-    height: 99.5%;
-    box-sizing: border-box;
-    background: rgb(29, 29, 29);
-    border: double 0.2em transparent;
-    border-radius: 0.5em;
-    background-image: linear-gradient(rgb(26, 26, 26), rgb(26, 26, 26)), linear-gradient(to bottom, orange, gold);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-
-
-.underline {
-    position: absolute;
-    border-top: 1.4em  black;
-    border-bottom: 1.4em black;
-    border-left: 1.4em solid transparent;
-    border-right: 1.4em solid transparent;
-    margin-top: 0em;
-    left: 50%;
-   
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.recipe {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1.5em;
-    font-size: 1.85em;
-    color: green;
-    font-family: monospace;
-    font-weight: normal;
-    opacity: 0;
+.heading {
+    color:rgb(214, 163, 86);
 }
 
-.text-style {
-    color: #D1BBAB;
-    background-color:  #A64B07;
-    padding: 10px 30px;
-    display: inline-block;
-    text-align: center;
+.frame {
+    border: 8px outset #d6a356; /* Border properties (width, style, color) */
+    border-bottom: 100px;
+    border-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 69px; /* Add rounded corners to the frame */
 }
