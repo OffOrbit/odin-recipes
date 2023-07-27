@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
-    margin 0;
-    padding: 0;
+* {
+    margin: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-size: 65px;
-    
-
 }
 
-.container{ 
+h1 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+.container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
@@ -21,84 +23,73 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: y mandatory;
     scroll-snap-align: start;
-}
-
-h1 {
-    text-shadow: 2px 2px 4px #000;
-}
-
-body{
-    margin: 0;
-}
-
-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: y mandatory;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(36,164,138);
+    background-color: rgb(23, 51, 45);
     padding-top: 100px;
-
 }
 
-.two {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8a334;
-    padding-top: 120px;
-
-
+.one, .two, .three, .four {
+    background-color: rgb(23, 51, 45);
 }
 
-.three {
+.one p {
+    color: rgb(179, 213, 241);  
+   }
 
+.two ul li {
+    color: rgb(179, 213, 241);  
 }
 
-.four {
-
-}
-
-
+.three ul li {
+    color: rgb(179, 213, 241);  
+   }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-   
+    margin: 20px auto;
+    
 }
 
-.heading {
-    color:rgb(214, 163, 86);
-}
-
-.heading2 {
-    color:rgba(0, 94, 73, 0.918);
+.heading, .heading1, .heading2, .heading3, .heading4 {
+    color: rgb(214, 163, 86);
 }
 
 .frame {
-    border: 8px outset #d6a356; /* Border properties (width, style, color) */
-    border-bottom: 100px;
-    border-top: 180px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border: 8px outset #d6a356;
+    border-radius: 1px;
+    padding: 10px;
+}
 
-    border-radius: 69px; /* Add rounded corners to the frame */
+p.page1 {
+    font-size:32px; 
+    text-align: left;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+ul.page2 li {
+    font-size: 32px; 
+}
+
+ul.page3 li {
+    font-size: 32px; 
+}
+
+ul.page3 {
+    font-style: disc;
+    font-size: 25px; 
+    text-align: left;
+    padding-left: 300px;
+    padding-right: 300px;
 }
